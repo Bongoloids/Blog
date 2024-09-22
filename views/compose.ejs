@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+<h1 class="h1_compose">POST SOMETHING</h1>
+
+<div class="px-4 py-5">
+    <form action="/submit" method="POST">
+        <div class="col-lg-6 mx-auto">
+        <h5>Title: </h5>
+        <input class="col-lg-12 mx-auto" type="text" name="title" placeholder="Title...">
+
+        <h5 style="margin-top: 5px;">Content: </h5>
+        <textarea class="col-lg-12 mx-auto" name="content" rows="4" cols="50"></textarea>
+        
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-left">
+            <button type="button submit" class="btn btn-primary btn-md px-2 gap-3 my-2">Publish</button>
+        </div>
+        </div>
+    </form>
+</div>
+    
+<%- include("partials/footer.ejs") %>
+    

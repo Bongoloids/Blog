@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+   
+<h1><%=index.title%></h1>
+<p class="lead my-3"><%=index.content%></p>
+
+<p class="lead mb-0"><a href="/edit/<%=indNum%>">Edit</a> <a href="/delete/<%=indNum%>">Delete</a></p>
+<p class="lead mb-0"></p>
+<p class="lead mb-0 mt-3"><a href="/" class="text-body-emphasis fw-bold">Back to Home</a></p>
+
+<%- include("partials/footer.ejs") %>
+    
